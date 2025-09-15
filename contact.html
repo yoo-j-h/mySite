@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>문의 · Tokyo Travel Mini Guide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="navbar" aria-label="주요 탐색">
+        <div class="brand">
+          <img src="assets/icons/logo.svg" alt="" role="presentation" />
+          <span>Tokyo Travel</span>
+        </div>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="destinations.html">명소</a></li>
+            <li><a href="contact.html" aria-current="page">문의</a></li>
+            <li><a href="maps.html">지도</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <header><h1>문의 폼</h1></header>
+      <form action="#" method="post" aria-describedby="form-help">
+        <div>
+          <label for="name">이름</label
+          ><input
+            id="name"
+            name="name"
+            type="text"
+            required
+            minlength="2"
+            placeholder="홍길동"
+          />
+        </div>
+        <div>
+          <label for="email">이메일</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="you@example.com"
+          />
+        </div>
+        <div>
+          <label for="topic">문의 유형</label>
+          <select id="topic" name="topic" required>
+            <option value="">선택하세요</option>
+            <option value="plan">여행 일정 문의</option>
+            <option value="food">맛집 문의</option>
+            <option value="etc">기타</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">메시지</label
+          ><textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            placeholder="문의 내용을 적어주세요."
+          ></textarea>
+        </div>
+
+        <button class="btn" type="submit">보내기</button>
+      </form>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div>© 2025 Tokyo Travel Mini Guide</div>
+        <div>
+          <p>문의 qwer@naver.com</p>
+          <p>츨처 https://www.youtube.com/@도쿄상어</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
