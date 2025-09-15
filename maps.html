@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>지도 · Tokyo Travel Mini Guide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="navbar" aria-label="주요 탐색">
+        <div class="brand">
+          <img src="assets/icons/logo.svg" alt="" role="presentation" />
+          <span>Tokyo Travel</span>
+        </div>
+        <nav role="navigation">
+          <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="destinations.html">명소</a></li>
+            <li><a href="contact.html">문의</a></li>
+            <li><a href="maps.html" aria-current="page">지도</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <header><h1>도쿄 구글 지도</h1></header>
+      <section aria-labelledby="map-overview">
+        <h2 id="map-overview">도쿄 전체 지도</h2>
+        <div class="table-wrap" style="padding: 0">
+          <iframe
+            title="Google Maps — Tokyo"
+            src="https://www.google.com/maps?q=Tokyo&output=embed"
+            style="width: 100%; height: 380px; border: 0; border-radius: 12px"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <section aria-labelledby="poi-maps">
+        <h2 id="poi-maps">주요 명소</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>센소지</h3>
+            <iframe
+              class="poi-map"
+              title="Asakusa"
+              src="https://www.google.com/maps?q=Asakusa%20Sensoji&output=embed"
+              loading="lazy"
+            ></iframe>
+          </article>
+          <article class="card">
+            <h3>스카이트리</h3>
+            <iframe
+              class="poi-map"
+              title="Skytree"
+              src="https://www.google.com/maps?q=Tokyo%20Skytree&output=embed"
+              loading="lazy"
+            ></iframe>
+          </article>
+          <article class="card">
+            <h3>시부야</h3>
+            <iframe
+              class="poi-map"
+              title="Shibuya"
+              src="https://www.google.com/maps?q=Shibuya%20Crossing&output=embed"
+              loading="lazy"
+            ></iframe>
+          </article>
+          <article class="card">
+            <h3>도쿄역</h3>
+            <iframe
+              class="poi-map"
+              title="Tokyo Station"
+              src="https://www.google.com/maps?q=Tokyo%20Station&output=embed"
+              loading="lazy"
+            ></iframe>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div>© 2025 Tokyo Travel Mini Guide</div>
+        <div>
+          <p>문의 qwer@naver.com</p>
+          <p>츨처 https://www.youtube.com/@도쿄상어</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
